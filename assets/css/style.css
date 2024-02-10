@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400");
+
+body {
+    margin: 0;
+    margin-top: -20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+}
+
+.loading .bar {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    background: transparent;
+    margin: 0 20px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+.loading .bar .progress {
+    height: 100%;
+    background: #fff;
+}
+
+.loading .bar .progress:after {
+    content: "Đang tải...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 20px;
+    mix-blend-mode: difference;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
